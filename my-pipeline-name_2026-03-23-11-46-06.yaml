@@ -1,0 +1,19 @@
+langVersion: v1
+name: my-pipeline-name-6d2f
+meta: {}
+accessConfigId: 9d968091-9c4c-4353-ba4b-d0316be093ea
+ui:
+  name: my-pipeline-name
+description: some description
+params:
+- name: param1
+  description: desc p1
+  ui: {}
+  type: string
+  default: "123"
+tasks:
+- name: some-name
+  meta: {}
+  params:
+    artifactPath: $(params.param1)
+  task: some-name
